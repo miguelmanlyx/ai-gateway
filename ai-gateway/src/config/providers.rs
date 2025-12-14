@@ -185,7 +185,7 @@ mod tests {
         );
 
         let aibadgr_config = aibadgr_config.unwrap();
-        // URL parsing automatically adds trailing slash
+        // Note: URL parser does NOT add trailing slash for paths
         assert_eq!(
             aibadgr_config.base_url.as_str(),
             "https://aibadgr.com/api/v1"
